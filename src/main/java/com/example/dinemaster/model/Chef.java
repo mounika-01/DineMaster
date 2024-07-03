@@ -60,9 +60,9 @@ public class Chef {
         return experienceYears;
     }
 
-    public void setExperienceYears(int experienceYears) {
-        this.experienceYears = experienceyears;
-    }
+   public void setExperienceYears(int experienceYears){
+        this.experienceYears = experienceYears;
+    }﻿
 
     public Restaurant getRestaurant() {
         return restaurant;
