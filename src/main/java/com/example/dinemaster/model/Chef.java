@@ -35,19 +35,23 @@ public class Chef {
     public String getFirstName() {
         return firstName;
     }
+
     public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
+
     public String getLastName() {
         return lastName;
     }
+
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
 
-    public String grtExpertise() {
+    public String getExpertise() {
         return expertise;
     }
+
     public void setExpertise(String expertise) {
         this.expertise = expertise;
     }
@@ -55,13 +59,15 @@ public class Chef {
     public int getExperienceYears() {
         return experienceYears;
     }
-    public void setExperienceYears(int ExperienceYears){
+
+    public void setExperienceYears(int experienceYears) {
         this.experienceYears = experienceyears;
     }
 
     public Restaurant getRestaurant() {
         return restaurant;
     }
+
     public void setRestaurant(Restaurant restaurant) {
         this.restaurant = restaurant;
     }
