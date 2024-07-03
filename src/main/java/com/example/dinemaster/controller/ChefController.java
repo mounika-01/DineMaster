@@ -11,7 +11,7 @@ import java.util.ArrayList;
 @RestController
 public class ChefController {
     @Autowired
-    private ChefJpaService chefJpaSevice;
+    private ChefJpaService chefJpaService;
 
     @GetMapping("/restaurants/chefs")
     public ArrayList<Chef> getChefs() {
@@ -20,7 +20,7 @@ public class ChefController {
 
     @GetMapping("/restaurants/chefs/{chefId}")
     public Chef getChefById(@PathVariable("chefId") int chefId) {
-        return chefJpaSevice.getChefById(chefId);
+        return chefJpaService.getChefById(chefId);
     }
 
     @PostMapping("/restaurants/chefs")
@@ -30,16 +30,16 @@ public class ChefController {
 
     @PutMapping("/restaurants/chefs/{chefId}")
     public Chef updateChef(@PathVariable("chefId") int chefId, @RequestBody Chef chef) {
-        return chefJpaSevice.updateChef(chefId, chef);
+        return chefJpaService.updateChef(chefId, chef);
     }
 
     @DeleteMapping("/restaurants/chefs/{chefId}")
     public void deleteChef(@PathVariable int chefId) {
-        chefJpaSevice.deleteChef(chefId);
+        chefJpaService.deleteChef(chefId);
     }
 
     @GetMapping("/chefs/{chefId}/restaurant")
     public Restaurant getChefRestaurant(@PathVariable int chefId) {
-        return chefJpaSevice.getChefRestaurant(chefId);
+        return chefJpaService.getChefRestaurant(chefId);
     }
 }
