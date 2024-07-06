@@ -16,5 +16,5 @@ public interface ChefRepository {
 
     void deleteChef(int chefId);
 
-    Restaurant getChefRestuarant(int chefId);
+    Restaurant getChefRestaurant(int chefId);
 }
